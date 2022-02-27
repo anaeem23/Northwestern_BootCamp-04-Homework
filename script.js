@@ -15,16 +15,16 @@ var timer = document.querySelector('#timer')
 
 // Create the Questions and Answers
 
-var questions = ["Test1", "Test2", "Test3", "Test4"];
+var questions = ["The condition in an if/else statement is enclosed within ____.", "Commonly used data types DO NOT INCLUDE:", "Arrays in JavaScript can be used to store ____.", "String values must be enclosed within _____ when being assigned to variables"];
 
-var ans1 = ["ANS1", "ANS1", "ANS1", "ANS1"];
-var ans2 = ["ANS2", "ANS2", "ANS2", "ANS2"];
-var ans3 = ["ANS3", "ANS3", "ANS3", "ANS3"];
-var ans4 = ["ANS4", "ANS4", "ANS4", "ANS4"];
+var ans1 = ["Quotes", "Curly Brackets", "Parenthesis", "Square Brackets"];
+var ans2 = ["Strings", "Booleans", "Alerts", "Numbers"];
+var ans3 = ["Numbers and Strings", "Other Arrays", "Booleans", "All of the Above"];
+var ans4 = ["Commas", "Quotes", "Curly Brackets", "Paranthesis"];
 
 var answers = [ans1, ans2, ans3, ans4];
 
-var correctAnswers = ["#Ans3Placement","#Ans1Placement","#Ans2Placement","#Ans4Placement"]
+var correctAnswers = ["#Ans3Placement","#Ans3Placement","#Ans4Placement","#Ans2Placement"]
 
 
 
@@ -67,7 +67,7 @@ function changeQuestion() {
 
     }else {
         localStorage.setItem("initialScore", JSON.stringify(count))
-        window.open("/scoreSubmission.html","_self")
+        window.open("scoreSubmission.html","_self")
 
         
     }

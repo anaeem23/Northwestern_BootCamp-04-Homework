@@ -25,7 +25,7 @@ function getVal(event) {
 
   localStorage.setItem("Name", JSON.stringify(Name));
   localStorage.setItem("Score", JSON.stringify(score));
-  window.open("/scorePage.html", "_self");
+  window.open("scorePage.html", "_self");
 }
 
 console.log(Name);
