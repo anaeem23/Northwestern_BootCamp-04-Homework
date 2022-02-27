@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Header {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    
+}
+
+#questionPlacement{
+    width: fit-content;
+    font-size: 4em;
+   
+}
+
+
+#ansChoice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    justify-content: center;
+}
+
+h2 {
+    background-color: blue;
+    font-size: 2em;
+}
+
+
+.startGamecontainter {
+    display:flex;
+    justify-content: center;
+    
+}
+#startGame {
+   font-size: 2em;
+}
+
+.rightwrong {
+    display: flex;
+    justify-content: center;
+    border-top: .1em solid black;
+    width: 100%;
+}
+#rightWrong {
+    font-size: 2em;
+    
+}

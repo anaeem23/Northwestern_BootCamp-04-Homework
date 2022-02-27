@@ -9,6 +9,9 @@ var ans4Placement = document.querySelector("#Ans4Placement");
 var ansChoice = document.querySelector("#ansChoice");
 var rightWrong = document.querySelector("#rightWrong");
 var playAgain = document.querySelector("#playAgain");
+var timer = document.querySelector('#timer')
+// localStorage.setItem('Score', "test")
+// localStorage.setItem('Name', "test")
 
 // Create the Questions and Answers
 
@@ -22,6 +25,24 @@ var ans4 = ["ANS4", "ANS4", "ANS4", "ANS4"];
 var answers = [ans1, ans2, ans3, ans4];
 
 var correctAnswers = ["#Ans3Placement","#Ans1Placement","#Ans2Placement","#Ans4Placement"]
+
+
+
+// Timer
+
+
+var count = 75;
+
+function countdown() {
+
+    count = count-1;
+    if (count <=0) {
+        clearInterval(counter)
+    }
+
+    timer.textContent = (`Timer: ${count}`)
+}
+
 
 // Function to control questions
 
@@ -45,8 +66,9 @@ function changeQuestion() {
         i++;
 
     }else {
+        localStorage.setItem("initialScore", JSON.stringify(count))
+        window.open("/scoreSubmission.html","_self")
 
-        window.open("scorePage.html","_self")
         
     }
 }
@@ -61,6 +83,7 @@ function right() {
 
 function wrong () {
     rightWrong.textContent = "Wrong!"
+    count = count-10;
 }
 
 
@@ -83,8 +106,13 @@ ansChoice.addEventListener("click", function(event) {
 
 //Start the game
 
-startbtn.addEventListener("click", changeQuestion);
+startbtn.addEventListener("click", startGame);
 
+function startGame() {
+    var counter = setInterval(countdown,1000)
+    changeQuestion();
+
+}
 
 
 
