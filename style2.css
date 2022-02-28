@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+}
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    color: red;
+    font-size: 6em;
+    margin-bottom: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: orange;
+    font-size: 3em;
+
+}
+

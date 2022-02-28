@@ -2,17 +2,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: black;
 }
 .Header {
     display: flex;
     justify-content: center;
     margin-top: 5%;
+    color: red;
     
 }
 
 #questionPlacement{
     width: fit-content;
-    font-size: 4em;
+    font-size: 5em;
    
 }
 
@@ -21,16 +23,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* justify-content: center; */
+    /* height: 10vh; */
     width: fit-content;
-    justify-content: center;
-    width: 50%;
+    width: 75%;
+    
 }
 
 h2 {
-    background-color: blue;
     color: white;
     font-size: 3em;
     margin: 1%;
+    color: orange;
+    
 }
 
 
@@ -40,16 +45,17 @@ h2 {
     
 }
 #startGame {
-   font-size: 2em;
+   font-size: 4em;
 }
 
 .rightwrong {
     display: flex;
     justify-content: center;
-    border-top: .1em solid black;
+    border-top: .1em solid blue;
     width: 100%;
 }
 #rightWrong {
-    font-size: 2em;
+    font-size: 3em;
+    color: blue;
     
 }
