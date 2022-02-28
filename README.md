@@ -1,20 +1,8 @@
 # 04 Web APIs: Code Quiz
 
-## Your Task
+## Task
 
-At some point in your journey to become a full-stack web developer, you’ll likely be asked to complete a coding assessment&mdash;perhaps as part of an interview process. A typical coding assessment includes both multiple-choice questions and interactive coding challenges. 
-
-To help familiarize you with these tests and allow you to use the skills covered in this unit, this week’s homework invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. 
-
-This week’s coursework will equip you with all the skills you need to succeed in this assignment.
-
-## User Story
-
-```
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+The task was to create a code related quiz. The entire thing was to be created from scratch and certain acceptance criteria were given for the project to be considered successful. 
 
 ## Acceptance Criteria
 
@@ -32,58 +20,13 @@ WHEN the game is over
 THEN I can save my initials and my score
 ```
 
-## Mock-Up
+## The Quiz
 
-The following animation demonstrates the application functionality:
+The quiz was created using 4 questions related to HTML/CSS/JS. Once the user starts the quiz, they have 75 seconds to complete it. For ever wrong answer, 10 seconds is removed from the timer. Once all questions are answered or if the timer runs out, the user is directed to a seperate page to submit their scores and initials. The score is the amount of time left. Once the user submits their scores, they are then redirected to the score page which lists all the scores of the previous attempts as well. These scores are stored in local storage/
 
-![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./Assets/04-web-apis-homework-demo.gif)
+## Submission
+ 
+ The URL: https://anaeem23.github.io/Northwestern_BootCamp-04-Homework/
 
-## Grading Requirements
+ Screenshot: ![Screenshot of main page](./Assets/MainPage.PNG)
 
-This homework is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the homework instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
----
-
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
