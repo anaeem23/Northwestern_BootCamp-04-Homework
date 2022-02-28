@@ -33,15 +33,7 @@ var correctAnswers = ["#Ans3Placement","#Ans3Placement","#Ans4Placement","#Ans2P
 
 var count = 75;
 
-function countdown() {
 
-    count = count-1;
-    if (count <=0) {
-        clearInterval(counter)
-    }
-
-    timer.textContent = (`Timer: ${count}`)
-}
 
 
 // Function to control questions
@@ -65,12 +57,20 @@ function changeQuestion() {
     
         i++;
 
+     
+
     }else {
-        localStorage.setItem("initialScore", JSON.stringify(count))
-        window.open("scoreSubmission.html","_self")
+        endGame()
 
         
     }
+}
+
+// Function to end game
+
+function endGame () {
+    localStorage.setItem("initialScore", JSON.stringify(count))
+    window.open("scoreSubmission.html","_self")
 }
 
 // Function to show if answer was right
@@ -111,9 +111,20 @@ startbtn.addEventListener("click", startGame);
 function startGame() {
     var counter = setInterval(countdown,1000)
     changeQuestion();
+   
+    function countdown() {
+
+        count = count-1;
+        if (count <=0) {
+            clearInterval(counter)
+            endGame()
+            
+        }
+    
+        timer.textContent = (`Timer: ${count}`)
+    }
 
 }
-
 
 
 
